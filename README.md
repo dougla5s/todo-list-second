@@ -2,4 +2,4 @@
 Todo-list with localStorage saving
 
 ## Link
-``` https://dougla5s.github.io/todo-list-second ```
+* [Site](https://dougla5s.github.io/todo-list-second)
