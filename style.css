@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background: rgb(108,48,140);
+    background: linear-gradient(164deg, rgba(108,48,140,1) 0%, rgba(255,170,201,1) 100%);
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Блок добавления задачи (поле и кнопка) */
+.add-block {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    flex-basis: 450px;
+}
+
+/* Поле ввода */
+#taskInput {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    flex: 1 1 450px;
+}
+
+/* Плейсхолдер */
+#taskInput::placeholder {
+    color: rgba(128, 128, 128, 0.384);
+}
+
+/* Кнопка добавления задачи */
+#addBtn {
+    border: none;
+    border-left: solid;
+    background: rgb(218,218,218);
+    background: linear-gradient(108deg, rgba(218,218,218,1) 0%, rgba(226,226,226,1) 100%);
+    width: 43px;
+    outline: none;
+}
+
+#addBtn:hover {
+    background: rgb(226,226,226);
+    background: linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(181,181,181,1) 100%);
+}
+
+
+/* Список задач */
+
+#list {
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+/* Элемент списка */
+
+.item {
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 20px;
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    background-color: white;
+}
+
+/* Запретить ужиматься блоку с кнопками в элементе списка*/
+.item__btns {
+    flex-shrink: 0;
+}
+
+
+/* Символ корзины */
+.fa-trash {
+    color: red;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Символ чекбокса */
+.fa-check {
+    color: green;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+/* Поведение элемента списка если добавлен класс .done */
+.item.done {
+    text-decoration: line-through rgba(0,128,0,0.4);
+    color: gray;
+}
+
+h1 {
+    color:white
+}
